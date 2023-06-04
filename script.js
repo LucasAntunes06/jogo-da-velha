@@ -54,9 +54,11 @@ const verificaJogador = (j) => {
 }
 
 const mudarJogador = (jogador, jogador2) => {
-  jogador2.classList.add('text-white');
+  jogador2.classList.add('text-black');
+  jogador2.classList.add('dark:text-white');
   jogador.classList.add('text-violet-600');
-  jogador.classList.remove('text-white');
+  jogador.classList.remove('text-black');
+  jogador.classList.remove('dark:text-white');
 }
 
 tabuleiro.forEach((tab) => {
